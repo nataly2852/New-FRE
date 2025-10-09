@@ -65,7 +65,6 @@ a {
     background-color: white;
     z-index: 1000;
     /* keeps it above other elements */
-    font-size: .75em;
     width: 100%;
     flex-direction: column;
 }
@@ -75,10 +74,10 @@ a {
     background-color: white;
     border-style: solid;
     border-width: .1em;
-    align-content: center;
     margin: 0;
-    font-size: 1em;
-    /* align-self: flex-start; */
+    font-size: .8em;
+    /* padding: .1em 1em .1em 1em; */
+    justify-items: center;
 }
 
 .dropdown:hover {
