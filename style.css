@@ -49,6 +49,11 @@ nav {
     margin: 0 1em 0 1em;
 }
 
+.categories>button{
+        border-color: black;
+        color: black;
+}
+
 nav>input {
     margin: 0 4em 0 0;
 }
@@ -731,7 +736,7 @@ button {
 
 }
 
-@media (max-width: 590px) {
+@media (max-width: 790px) {
     main {
         flex-direction: column;
         height: auto;
