@@ -193,6 +193,8 @@ main {
 }
 
 
+
+
 #Folder {
     display: flex;
     flex-direction: column;
@@ -226,6 +228,9 @@ main {
     bottom: .25em;
 }
 
+.textimg:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 @media (max-width:1380px) {
