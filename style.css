@@ -245,14 +245,7 @@ button:hover {
     main {
         flex-direction: column;
         align-items: flex-start;
-        overflow-y: hidden;
-        box-sizing: border-box;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: inherit;
+        /* overflow-y: hidden; */
     }
 
     #Left,
@@ -262,7 +255,7 @@ button:hover {
         padding: 0;
         margin: 0;
         /* ✅ Prevent overlap and allow flexible layout */
-        min-height: 100vh;
+        min-height: 100dvh;
         height: auto;
     }
 
