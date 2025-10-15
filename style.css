@@ -249,7 +249,7 @@ button:hover {
         box-sizing: border-box;
     }
 
-    * ,
+    *,
     *::before,
     *::after {
         box-sizing: inherit;
@@ -261,10 +261,13 @@ button:hover {
         width: 90%;
         padding: 0;
         margin: 0;
+        /* ✅ Prevent overlap and allow flexible layout */
+        min-height: 100vh;
+        height: auto;
     }
 
     #Left {
-        height: 40vh;
+        height: auto;
     }
 
     button {
@@ -350,7 +353,7 @@ button:hover {
 /* ===================================================
    📞 PHONE BREAKPOINT (mobile devices)
    =================================================== */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     nav {
         justify-content: space-between;
         align-items: center;
@@ -369,6 +372,9 @@ button:hover {
     #Right {
         width: 95%;
         padding: 1em;
+        /* ✅ Remove vh for mobile, let content decide height */
+        height: auto;
+        min-height: unset;
     }
 
     #Title h1 {
@@ -392,4 +398,4 @@ button:hover {
         font-size: 0.9em;
         margin: 0.25em;
     }
-} */
+}
