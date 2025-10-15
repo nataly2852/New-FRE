@@ -36,6 +36,7 @@ nav {
 #logo {
     margin-right: auto;
     font-size: 1.5em;
+    font-weight: bold;
     padding: 0.5em 1em;
     width: 10%;
     justify-content: flex-start;
@@ -342,7 +343,7 @@ button:hover {
     /* ===================================================
    📞 PHONE BREAKPOINT (mobile devices)
    =================================================== */
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         nav {
             justify-content: space-between;
             align-items: center;
@@ -385,5 +386,5 @@ button:hover {
             font-size: 0.9em;
             margin: 0.25em;
         }
-    }
+    } */
 }
