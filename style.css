@@ -340,12 +340,13 @@ button:hover {
     }
 } */
 
-@media (max-width: 768px) {
-        main {
+@media (max-width: 900px) {
+    main {
         flex-direction: column;
         align-items: flex-start;
         /* overflow-y: hidden;  */
     }
+
     nav {
         justify-content: space-between;
         align-items: center;
@@ -356,7 +357,7 @@ button:hover {
     }
 
     .dropdown {
-        display:none;
+        display: none;
         font-size: 15px;
         padding: 0.25em 0.5em;
     }
