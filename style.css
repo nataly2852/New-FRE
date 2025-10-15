@@ -132,7 +132,7 @@ nav>input {
 
 #Title h2 {
     color: gray;
-    font-size: 2em;
+    font-size: 3em;
     width: 100%;
 }
 
@@ -154,7 +154,7 @@ button {
     background: rgb(221, 186, 255, 0.8);
     border: 1px solid rgb(182, 154, 208);
     color: blueviolet;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0 0.5em;
     cursor: pointer;
 }
@@ -164,7 +164,7 @@ button:hover {
 }
 
 #guidelines {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
@@ -200,6 +200,7 @@ button:hover {
 .links>li {
     padding: .1em 0;
     text-decoration: underline;
+        font-size: 1.5em;
 }
 
 #L1:hover {
@@ -307,9 +308,9 @@ button:hover {
     }
 
     nav>input {
-    margin-left: 2em;
-    padding: 0em;
-}
+        margin-left: 2em;
+        padding: 0em;
+    }
 
     #Title h1 {
         font-size: 2em;
