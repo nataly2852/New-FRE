@@ -238,7 +238,9 @@ button:hover {
     color: black;
     border: 1px solid black;
 }
-
+/* ===================================================
+   📱 TABLET BREAKPOINT (iPad, small laptops)
+   =================================================== */
 @media (max-width: 1024px) {
     main {
         flex-direction: column;
@@ -253,7 +255,8 @@ button:hover {
         padding: 0;
         margin: 0;
         /* ✅ Prevent overlap and allow flexible layout */
-        height: 100dvh;
+        min-height: 100dvh;
+        height: auto;
     }
 
     #Left {
@@ -340,6 +343,9 @@ button:hover {
     }
 }
 
+/* ===================================================
+   📞 PHONE BREAKPOINT (mobile devices)
+   =================================================== */
 @media (max-width: 768px) {
     nav {
         justify-content: space-between;
@@ -360,7 +366,8 @@ button:hover {
     #Right {
         width: 95%;
         padding: 1em;
-        height: auto;
+        /* ✅ Remove vh for mobile, let content decide height */
+        height: 100dvh;
         min-height: unset;
     }
 
