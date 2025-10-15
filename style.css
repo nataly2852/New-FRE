@@ -239,9 +239,6 @@ button:hover {
     border: 1px solid black;
 }
 
-/* ===================================================
-   PHONE BREAKPOINT (mobile devices)
-   =================================================== */
 @media (max-width: 768px) {
     nav {
         justify-content: space-between;
@@ -261,8 +258,7 @@ button:hover {
     #Right {
         width: 95%;
         padding: 1em;
-        /* ✅ Fix: prevent overlap by removing vh on mobile */
-        height: auto;
+        height: 100dvh;
         min-height: unset;
     }
 
