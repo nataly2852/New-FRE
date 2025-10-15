@@ -353,7 +353,7 @@ button:hover {
 /* ===================================================
    📞 PHONE BREAKPOINT (mobile devices)
    =================================================== */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     nav {
         justify-content: space-between;
         align-items: center;
@@ -364,6 +364,7 @@ button:hover {
     }
 
     .dropdown {
+        display: none;
         font-size: 15px;
         padding: 0.25em 0.5em;
     }
