@@ -351,7 +351,81 @@ button:hover {
         justify-content: space-between;
         align-items: center;
     }
+    #Left,
+    #Right {
+        top: 100%;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        max-height: 100dvh;
+    }
 
+
+    #Left {
+        height: auto;
+    }
+
+    button {
+        background: rgb(221, 186, 255, 0.8);
+        border: 1px solid rgb(182, 154, 208);
+        color: blueviolet;
+        font-size: 1em;
+        margin: 0 0.5em;
+        cursor: pointer;
+    }
+
+    #Right {
+        align-content: flex-start;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: white;
+        border-bottom: 2px solid black;
+        padding: 0.5em 2em;
+        width: 100%;
+        height: 10%;
+    }
+
+    #logo {
+        margin-right: auto;
+        font-size: 16px;
+        padding: 0.5em 1em;
+        width: 10%;
+        justify-content: flex-start;
+    }
+
+    #Rightnav {
+        display: inline-flex;
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .dropdown {
+        position: relative;
+        font-size: 16px;
+        cursor: pointer;
+        align-content: center;
+        justify-content: space-evenly;
+        text-wrap: nowrap;
+        padding: 0 10px;
+    }
+
+    nav>input {
+        margin-left: 2em;
+        padding: 0em;
+    }
+
+
+    #m1 {
+        height: 12em;
+    }
+
+    #m2 {
+        height: 8em;
+    }
     #logo {
         font-size: 15px;
     }
@@ -360,15 +434,6 @@ button:hover {
         display: none;
         font-size: 15px;
         padding: 0.25em 0.5em;
-    }
-
-    #Left,
-    #Right {
-        top: 100%;
-        width: 90%;
-        padding: 0;
-        margin: 0;
-        max-height: 100dvh;
     }
 
 
