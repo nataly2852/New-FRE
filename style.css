@@ -253,8 +253,7 @@ button:hover {
         padding: 0;
         margin: 0;
         /* ✅ Prevent overlap and allow flexible layout */
-        min-height: 100dvh;
-        height: auto;
+        height: 100dvh;
     }
 
     #Left {
