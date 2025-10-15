@@ -201,7 +201,7 @@ button:hover {
 .links>li {
     padding: .1em 0;
     text-decoration: underline;
-        font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 #L1:hover {
@@ -238,7 +238,6 @@ button:hover {
     color: black;
     border: 1px solid black;
 }
-
 /* ===================================================
    📱 TABLET BREAKPOINT (iPad, small laptops)
    =================================================== */
@@ -250,11 +249,10 @@ button:hover {
         box-sizing: border-box;
     }
 
-    *,
+    * ,
     *::before,
     *::after {
         box-sizing: inherit;
-
     }
 
     #Left,
@@ -267,6 +265,15 @@ button:hover {
 
     #Left {
         height: 40vh;
+    }
+
+    button {
+        background: rgb(221, 186, 255, 0.8);
+        border: 1px solid rgb(182, 154, 208);
+        color: blueviolet;
+        font-size: 1em;
+        margin: 0 0.5em;
+        cursor: pointer;
     }
 
     #Right {
@@ -338,53 +345,51 @@ button:hover {
     #m2 {
         height: 8em;
     }
+}
 
-
-    /* ===================================================
+/* ===================================================
    📞 PHONE BREAKPOINT (mobile devices)
    =================================================== */
-    /* @media (max-width: 768px) {
-        nav {
-            justify-content: space-between;
-            align-items: center;
-        }
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        #logo {
-            font-size: 15px;
-        }
+    #logo {
+        font-size: 15px;
+    }
 
-        .dropdown {
-            font-size: 15px;
-            padding: 0.25em 0.5em;
-        }
+    .dropdown {
+        font-size: 15px;
+        padding: 0.25em 0.5em;
+    }
 
-        #Left,
-        #Right {
-            width: 95%;
-            padding: 1em;
-        }
+    #Left,
+    #Right {
+        width: 95%;
+        padding: 1em;
+    }
 
-        #Title h1 {
-            font-size: 1.8em;
-        }
+    #Title h1 {
+        font-size: 1.8em;
+    }
 
-        #Title h2 {
-            font-size: 1.2em;
-        }
+    #Title h2 {
+        font-size: 1.2em;
+    }
 
-        #guidelines {
-            font-size: 1em;
-        }
+    #guidelines {
+        font-size: 1em;
+    }
 
-        .Machine {
-            flex-direction: column;
-            gap: 1em;
-        }
+    .Machine {
+        flex-direction: column;
+        gap: 1em;
+    }
 
-
-        button {
-            font-size: 0.9em;
-            margin: 0.25em;
-        }
-    } */
+    button {
+        font-size: 0.9em;
+        margin: 0.25em;
+    }
 }
