@@ -357,6 +357,7 @@ button:hover {
     }
 
     .dropdown {
+        display:none;
         font-size: 15px;
         padding: 0.25em 0.5em;
     }
