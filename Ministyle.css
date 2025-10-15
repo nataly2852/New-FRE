@@ -14,6 +14,7 @@ body {
     box-sizing: inherit;
 
 }
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -73,7 +74,7 @@ nav {
     display: flex;
 }
 
-.categories > button {
+.categories>button {
     background-color: white;
     border: none;
     border-top: 1px solid lightgray;
@@ -84,7 +85,7 @@ nav {
     cursor: pointer;
 }
 
-.categories > button:hover {
+.categories>button:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -100,24 +101,40 @@ nav input[type="text"]:focus {
     outline: none;
     border-color: rgba(0, 0, 0, 0.7);
 }
+
 main {
     display: inline-flex;
     justify-content: center;
     background-color: white;
     width: 100%;
-    min-width: 10em;
-    max-width: 200em;
-    margin: 0 5em;
+    padding: 0 4em;
+}
+
+#tutorialLeft,
+#tutorialRight {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #tutorialLeft {
     background-color: white;
     flex-direction: column;
-    width: 50vw;
-    margin: 0em 3em 0 3em;
+    width: 50%;
     height: 100vh;
+    padding: 4em;
 }
 
+#tutorialRight {
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+}
 
 #tabTitle {
     background-color: white;
@@ -174,15 +191,6 @@ main {
     padding: .4em 0;
 }
 
-#tutorialRight {
-    background-color: white;
-    display: inline-flex;
-    justify-content: flex-start;
-    width: 50vw;
-    margin: 0 13em 0 0em;
-    height: 100vh;
-    align-items: center;
-}
 
 #imgA {
     background-color: white;
@@ -237,4 +245,79 @@ main {
 
 .textimg:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-y: hidden;
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    #tutorialLeft,
+    #tutorialRight {
+        top: 100%;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        width: 95%;
+        padding: 1em;
+        height: auto;
+        min-height: unset;
+
+    }
+
+    #tutorialRight {
+        align-content: flex-start;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        background-color: white;
+        border-bottom: 2px solid black;
+        padding: 0.5em 2em;
+        width: 100%;
+        height: 10%;
+    }
+
+    #logo {
+        font-size: 15px;
+        margin-right: auto;
+        padding: 0.5em 1em;
+        width: 10%;
+        justify-content: flex-start;
+    }
+
+    #Rightnav {
+        display: inline-flex;
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .dropdown {
+        display: none;
+        font-size: 15px;
+        padding: 0.25em 0.5em;
+        position: relative;
+        cursor: pointer;
+        align-content: center;
+        justify-content: space-evenly;
+        text-wrap: nowrap;
+    }
+
+
+    nav>input {
+        margin-left: 2em;
+        padding: 0em;
+    }
 }
