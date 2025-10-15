@@ -239,7 +239,7 @@ button:hover {
     border: 1px solid black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     nav {
         justify-content: space-between;
         align-items: center;
