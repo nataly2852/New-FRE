@@ -245,7 +245,14 @@ button:hover {
     main {
         flex-direction: column;
         align-items: flex-start;
-        /* overflow-y: hidden; */
+        overflow-y: hidden;
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
     }
 
     #Left,
@@ -255,7 +262,7 @@ button:hover {
         padding: 0;
         margin: 0;
         /* ✅ Prevent overlap and allow flexible layout */
-        min-height: 100dvh;
+        min-height: 100vh;
         height: auto;
     }
 
@@ -357,7 +364,6 @@ button:hover {
     }
 
     .dropdown {
-        display:none;
         font-size: 15px;
         padding: 0.25em 0.5em;
     }
@@ -367,7 +373,7 @@ button:hover {
         width: 95%;
         padding: 1em;
         /* ✅ Remove vh for mobile, let content decide height */
-        height: 100dvh;
+        height: auto;
         min-height: unset;
     }
 
